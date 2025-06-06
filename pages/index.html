@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>干在实处科技 - 首页</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <header>
+        <!-- 导航栏将通过JavaScript动态加载 -->
+        <div id="nav-placeholder"></div>
+    </header>
+
+    <main>
+        <!-- 首页横幅 -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>智慧教育创新引领者</h1>
+                <p>以AI+XR技术赋能教育创新，打造智慧教育新生态</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 页脚将通过JavaScript动态加载 -->
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <script src="../scripts/common.js"></script>
+    
+    <style>
+        /* 首页横幅样式 */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero-content p {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-content p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</body>
+</html> 

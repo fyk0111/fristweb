@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 上海干在实处科技有限公司</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="干在实处科技logo">
+                <h1>干在实处科技</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="services.html">产品服务</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>联系我们</h1>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3>公司地址</h3>
+                    <p><i class="icon-location"></i>上海市奉贤区环城西路3111弄300号2幢1层</p>
+                    <p><i class="icon-phone"></i>13524065132</p>
+                    <p><i class="icon-email"></i>atomfuyikai@foxmail.com</p>
+                </div>
+                <div class="info-card">
+                    <h3>工作时间</h3>
+                    <p>周一至周五：9:00 - 18:00</p>
+                    <p>周六、周日：休息</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>在线咨询</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">公司名称</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">电子邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">联系电话</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">咨询主题</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">请选择咨询主题</option>
+                            <option value="product">产品咨询</option>
+                            <option value="service">服务咨询</option>
+                            <option value="cooperation">商务合作</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">咨询内容</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交咨询</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 上海干在实处科技有限公司 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // 表单提交处理
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 这里添加表单提交逻辑
+            alert('感谢您的咨询，我们会尽快与您联系！');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 
